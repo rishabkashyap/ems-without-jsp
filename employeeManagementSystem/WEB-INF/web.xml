@@ -1,0 +1,51 @@
+<web-app>
+	<servlet>
+		<servlet-name>abcd</servlet-name>
+		<servlet-class>UpdateServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>abcde</servlet-name>
+		<servlet-class>UpdateFromIdServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>a</servlet-name>
+		<servlet-class>SearchServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>b</servlet-name>
+		<servlet-class>DeleteServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>cd</servlet-name>
+		<servlet-class>StoreServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+			<servlet-name>abcde</servlet-name>
+			<url-pattern>/updatecontent</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+			<servlet-name>abcd</servlet-name>
+			<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+			<servlet-name>a</servlet-name>
+			<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+			<servlet-name>b</servlet-name>
+			<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+			<servlet-name>cd</servlet-name>
+			<url-pattern>/store</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
